@@ -1,7 +1,7 @@
 # Discipline Grader
 import math
 
-steps  = 7500
+steps  = 6467
 sleep = 6
 water_glasses = 5
 cold_shower = False
