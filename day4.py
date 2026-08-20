@@ -1,10 +1,13 @@
 # Discipline Grader
+import math
 
 steps  = 7500
 sleep = 6
 water_glasses = 5
 cold_shower = False
-Pages_read = 20
+Pages_read = 15
+target_steps = 10000
+
 
 #Steps 
 if steps >= 10000:
@@ -34,3 +37,11 @@ if Pages_read >= 10:
 else:
     print ("You did not met daily pages read")
 
+
+import math
+
+progress_pct = (steps / target_steps) * 100
+
+rounded = math.floor(progress_pct)
+
+print("Summary:", rounded, "% of the daily target achieved")
