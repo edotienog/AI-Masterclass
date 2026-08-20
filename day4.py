@@ -38,8 +38,6 @@ else:
     print ("You did not met daily pages read")
 
 
-import math
-
 progress_pct = (steps / target_steps) * 100
 
 rounded = math.floor(progress_pct)
