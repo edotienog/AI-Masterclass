@@ -1,4 +1,4 @@
-# Adding items in list using append() metho
+# Adding items in list using append() method to the end of list
 
 #Before
 skills = ["welding", "tiling","upholstery"]
