@@ -7,7 +7,6 @@ week_log = [
     {"day": "Thursday", "steps": 11000, "protocol": "Autophaghy Marathon", "cold_shower": True},
     {"day": "Friday", "steps": 7600, "protocol": "OMAD", "cold_shower": True},
 ]
-#print(week_log)
 
 # Accesing value inside nested data 
 
@@ -17,3 +16,16 @@ print("Monday steps:", week_log[0]["steps"])
 print("Wednesday protocol:", week_log[2]["protocol"]) 
 # Second day, all details
 print("Tuesday details:", week_log[1])
+print()
+
+# Looping through the dictionary list
+print("== Week steps hit target 8000 ==")
+for log in week_log:
+    status = "Goal hit" if log["steps"] >= 8000 else "Below goal"
+    print(log["day"], "-", log["steps"], "steps -", status)
+print()
+print("== Whether Cold shower was done==")
+
+for log in week_log:
+    status = "Cold shower done" if log["cold_shower"] == True else "Not Done"
+    print(log["day"], status)
