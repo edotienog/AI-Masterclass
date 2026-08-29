@@ -7,7 +7,6 @@ contact_book = [
     {"name": "Lupita nyongo", "Phone": "0790818981","skill": "Tailoring", "city": "Nairobi"},
     {"name": "Sylvester stallone", "Phone": "0791821921","skill": "Mechanic", "city": "Kisumu"}
 ]
-
 print("Stored Contacts:", len(contact_book[0]))
 print(contact_book[0])
 
@@ -22,9 +21,9 @@ for i, contact in enumerate(contact_book):
     print(f" Skill: {contact['skill']}")
     print(f" City: {contact['city']}")
 print()
-#Search by name and print results
+# Step 3: Search by name and print results
 #Looping and comparing the list with the search value
-print("=== SEARCH CONTACT BY NAME===")
+print("=== SEARCH CONTACT BY NAME ===")
 search_name = "James Otieno"
 found = False
 
@@ -41,7 +40,7 @@ for contact in contact_book:
 if not found:
         print("No contact found with name",search_name)
 print()
-
+print("=== SEARCH BY CITY ===")
 # Step 4: Search by City
 
 search_city = "Nairobi"
@@ -49,3 +48,12 @@ print(f"Contacts in {search_city}:")
 for contact in contact_book:
      if contact["city"] == search_city:
         print(f" name: {contact['name']} | {contact['Phone']} | {contact['skill']}")
+print()
+#Step 5: Add a new contact 
+print("=== Adding New Contact ===")
+new_contact = {"name": "Kevin Mwangi", "Phone": "0767890123","skill": "beekeeping", "city":"Nakuru"}
+contact_book.append(new_contact)
+print("After:", len(contact_book), "contacts")
+print("Last contact:", contact_book[-1])
+print(" === SUMMARY ===")
+print(f"\nTotal contacts: {len(contact_book)}")
