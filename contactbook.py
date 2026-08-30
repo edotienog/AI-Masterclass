@@ -13,17 +13,16 @@ print(contact_book[0])
 #Step 2: Display all contact 
 # Using a loop to print a clean format 
 
-print("==== CONTACT BOOK====")
+print("\n==== CONTACT BOOK====")
 
 for i, contact in enumerate(contact_book):
     print(f"\n{i+1}. {contact['name']}")
     print(f" Phone: {contact['Phone']}")
     print(f" Skill: {contact['skill']}")
     print(f" City: {contact['city']}")
-print()
 # Step 3: Search by name and print results
 #Looping and comparing the list with the search value
-print("=== SEARCH CONTACT BY NAME ===")
+print("\n=== SEARCH CONTACT BY NAME ===")
 search_name = "James Otieno"
 found = False
 
@@ -39,8 +38,8 @@ for contact in contact_book:
 
 if not found:
         print("No contact found with name",search_name)
-print()
-print("=== SEARCH BY CITY ===")
+
+print("\n=== SEARCH BY CITY ===")
 # Step 4: Search by City
 
 search_city = "Nairobi"
@@ -48,9 +47,9 @@ print(f"Contacts in {search_city}:")
 for contact in contact_book:
      if contact["city"] == search_city:
         print(f" name: {contact['name']} | {contact['Phone']} | {contact['skill']}")
-print()
+
 #Step 5: Add a new contact 
-print("=== Adding New Contact ===")
+print(f"\n=== Adding New Contact ===")
 new_contact = {"name": "Kevin Mwangi", "Phone": "0767890123","skill": "beekeeping", "city":"Nakuru"}
 contact_book.append(new_contact)
 print("After:", len(contact_book), "contacts")
