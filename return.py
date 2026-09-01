@@ -14,7 +14,7 @@ print("Average steps this week:", avg)
 def get_status(steps):
     if steps > 10000:
         return "Exceeded"
-    elif 8000 <= steps <= 8000: 
+    elif 8000 <= steps <= 10000: 
         return "Hit"
     else: 
         return "Missed"
