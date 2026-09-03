@@ -1,19 +1,16 @@
+#Using math module in python
+
 import math
 
-steps = 9400
-target = 10000
+# square root of a number
+print("Square root of 144:", math.sqrt(144))
 
-progress_pct = (steps / target) * 100
+#Round down and round up a number
+print("Floor of 7.9:", math.floor(7.9))
+print("Ceiling of 7.1:", math.ceil(7.1))
 
-# math.floor rounds DOWN to nearest whole number
-rounded = math.floor(progress_pct)
+#Pi 
+print("Value of Pi:", math.pi)
 
-print("Steps today:", steps)
-print("Progress:", rounded, "%")
-
-if progress_pct >= 100:
-    print("Target hit")
-elif progress_pct >= 80:
-    print("Close. Push the last", target - steps, "steps.")
-else:
-    print("Still", target - steps, "steps to go")
+#Power: 2 to the power of 10
+print("2 to the power of 10:", math.pow(2, 10))
