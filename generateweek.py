@@ -3,6 +3,12 @@ import random
 import math 
 
 def generate_week():
+    """Generate and print weekly step statistics.
+
+    Simulates steps for each day of the week, prints days that meet the
+    daily goal (>= 8000 steps), the average steps for the week, and
+    the count of goal days.
+    """
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     total = 0
     goal_days = 0
